@@ -4,12 +4,12 @@ function Carousal() {
   return (
     <div>
       <div
-        id="carouselcontrol"
+        id="carouselslide"
         className="carousel slide carousal-fade"
         data-ride="carousel"
         style={{objectFit:"contain !important"}}
       >
-        <div className="carousel-inner">
+        <div className="carousel-inner" id ="carousalimage">
           <div className="carousel-caption" style={{ zIndex: "10" }}>
             <form className="d-flex">
               <input
@@ -23,7 +23,7 @@ function Carousal() {
               </button>
             </form>
           </div>
-          <div className="carousel-item active max-height-500px ">
+          <div className="carousel-item active">
             <img
               className="d-block w-100"
               src="https://source.unsplash.com/random/600x500/?momos"

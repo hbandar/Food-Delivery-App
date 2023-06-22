@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+#carousalimage{
+  max-height: 500px;
+}
