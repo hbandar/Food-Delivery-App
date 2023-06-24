@@ -13,10 +13,13 @@ export default function Navbar() {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link className="nav-Link active me-5 text-light text-decoration-none fs-4" aria-current="page" to ="/">Home</Link>
+          <Link className="nav-Link me-5 text-light text-decoration-none fs-4" aria-current="page" to ="/">Home</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-Link text-light text-decoration-none fs-4" to ="/login">Login</Link>
+          <Link className="nav-Link text-light me-5 text-decoration-none fs-4" to ="/login">Login</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-Link text-light text-decoration-none fs-4" to ="/createuser">Signup</Link>
         </li>
       </ul>
     </div>
