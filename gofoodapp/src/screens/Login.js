@@ -24,7 +24,10 @@ const handleSubmit = async(e)=>{
      if(json.success !== true){
        alert("enter valid credentials!!");
     }else{
+      localStorage.setItem("authToken",json.authToken);
+      console.log(localStorage.getItem("authToken"));
       navigate('/');
+
     }
 }
 
