@@ -25,7 +25,7 @@ export default function Signup() {
     }
 
     const onchange = (event)=>{
-        setcred({...cred, [event.target.name]:event.target.value})
+        setcred({...  cred, [event.target.name]:event.target.value});
     }
 
   return (
@@ -80,7 +80,7 @@ export default function Signup() {
           <button type="submit" className="m-3 btn btn-success">
             Submit
           </button>
-          <Link className='m-3 btn btn-danger'>Existing User</Link>
+          <Link to = "/login"className='m-3 btn btn-danger'>Existing User</Link>
         </form>
       </div>
     </div>
