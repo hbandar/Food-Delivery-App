@@ -3,12 +3,16 @@ import React from 'react'
 export default function Card(props) {
 
   let options = props.options;
-  let priceOptions = Object.keys(options)
+  let priceOptions = Object.keys(options);
+
+  const handleCart = ()=>{
+    
+  }
 
   return (
     <div>
         <div className="card mt-3" style={{ width: "18rem", maxHeight: "400px" }}>
-          <img src={props.imglink}/>
+          <img className = "card-img-top" src={props.imglink} style={{height:"150px", objectFit:"contain"}}/>
           <div className="card-body">
                 <h5 className="card-title">{props.foodName}</h5>
               <div className="container flex w-100 p-0 d-inline">
@@ -30,6 +34,9 @@ export default function Card(props) {
                 </select>
                 <div className="fs-5 h-100 mx-2 d-inline">Total Price</div>
                 </div>
+
+                <hr />
+                <button className='btn btn-success justify-center ms-2' onClick={handleCart}>Add to Cart</button>
             </div>
         </div>
     </div>
