@@ -116,7 +116,7 @@ export default function Home() {
                 <hr />
                 {foodItem !== [] ? (
                   foodItem
-                    .filter((itemdata) => (itemdata.CategoryName == data.name) && (itemdata.name.toLowerCase().includes(search.toLocaleLowerCase())))
+                    .filter((itemdata) => (itemdata.CategoryName === data.name) && (itemdata.name.toLowerCase().includes(search.toLocaleLowerCase())))
                     .map((matchedData) => {
                       return (
                         <div

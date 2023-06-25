@@ -6,8 +6,8 @@ export default function Card(props) {
   let priceOptions = Object.keys(options);
 
   const handleCart = ()=>{
-    
-  }
+
+  };
 
   return (
     <div>
